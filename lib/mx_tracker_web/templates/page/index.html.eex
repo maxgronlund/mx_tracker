@@ -1,0 +1,27 @@
+<div class="jumbotron">
+  <h2>Mx Tracker 01</h2>
+  <p class="lead">A tracker for nodes<br />Keep a list of nodes in the MX media exchange network </p>
+</div>
+
+<span><%= link "Trackers", to: tracker_path(@conn, :index) , class: 'btn btn-primary'%></span>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+
+
+<!-- Default button -->
+<button type="button" class="btn btn-default">Publishers</button>
+
+<!-- Secondary button -->
+<button type="button" class="btn btn-secondary">Distributors</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Factories</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>

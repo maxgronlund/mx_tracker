@@ -1,0 +1,28 @@
+<h2>Show Mx node</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @mx_node.name %>
+  </li>
+
+  <li>
+    <strong>Url:</strong>
+    <%= @mx_node.url %>
+  </li>
+
+  <li>
+    <strong>Node type:</strong>
+    <%= @mx_node.node_type %>
+  </li>
+
+  <li>
+    <strong>Node uuid:</strong>
+    <%= @mx_node.node_uuid %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: mx_node_path(@conn, :edit, @mx_node) %></span>
+<span><%= link "Back", to: mx_node_path(@conn, :index) %></span>

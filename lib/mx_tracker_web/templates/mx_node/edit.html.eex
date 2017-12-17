@@ -1,0 +1,5 @@
+<h2>Edit Mx node</h2>
+
+<%= render "form.html", Map.put(assigns, :action, mx_node_path(@conn, :update, @mx_node)) %>
+
+<span><%= link "Back", to: mx_node_path(@conn, :index) %></span>

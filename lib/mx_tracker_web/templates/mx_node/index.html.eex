@@ -1,0 +1,30 @@
+<h2>Listing Mx nodes</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Url</th>
+      <th>Node type</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for mx_node <- @mx_nodes do %>
+    <tr>
+      <td><%= mx_node.name %></td>
+      <td><%= mx_node.url %></td>
+      <td><%= mx_node.node_type %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: mx_node_path(@conn, :show, mx_node), class: "btn btn-default btn-sm" %></span>
+        <span><%= link "Edit", to: mx_node_path(@conn, :edit, mx_node), class: "btn btn-default btn-sm" %></span>
+        <span><%= link "Delete", to: mx_node_path(@conn, :delete, mx_node), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-sm" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Mx node", to: mx_node_path(@conn, :new) %></span>

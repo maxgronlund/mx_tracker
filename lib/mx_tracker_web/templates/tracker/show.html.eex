@@ -1,0 +1,33 @@
+<h2>Show Tracker</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @mx_tracker.name %>
+  </li>
+
+  <li>
+    <strong>URL:</strong>
+    <%= @mx_tracker.url %>
+  </li>
+
+  <li>
+    <strong>IP:</strong>
+    <%= @mx_tracker.ip %>
+  </li>
+
+  <li>
+    <strong>Key ID:</strong>
+    <%= @mx_tracker.key_id %>
+  </li>
+
+  <li>
+    <strong>Access Key:</strong>
+    <%= @mx_tracker.access_key %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: tracker_path(@conn, :edit, @mx_tracker) %></span>
+<span><%= link "Back", to: tracker_path(@conn, :index) %></span>
