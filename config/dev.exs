@@ -51,8 +51,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :mx_tracker, MxTracker.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "maxgronlund",
-  password: "",
-  database: "mx_tracker_dev",
-  hostname: "localhost",
+  username: "postgres",
+  password: "GiveMeAChance2",
+  database: "postgres",
+  hostname: "postgres",
   pool_size: 10
